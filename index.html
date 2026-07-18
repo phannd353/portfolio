@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nguyen Duy Phan Portfolio</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Nguyen Duy Phan Portfolio" />
+        <meta property="og:description" content="Welcome to my portfolio!" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://phannd353.github.io/portfolio"
+        />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Devicons -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+    </head>
+    <body class="flex min-h-[100vh] flex-col bg-[#fff] font-mono">
+        <header
+            class="absolute top-0 z-20 flex h-[60px] w-full bg-opacity-0 px-[5%] max-lg:mr-auto max-lg:px-4 lg:justify-around"
+        >
+            <a class="h-[50px] p-[4px] text-2xl font-medium" href=""> Phan </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="flex h-full w-max gap-5 text-base text-black max-lg:mt-[30px] max-lg:flex-col max-lg:place-items-end max-lg:gap-5 lg:mx-auto lg:place-items-center"
+                >
+                    <a class="header-links" href="#about"> About Me </a>
+                    <a class="header-links" href="#work"> Work </a>
+                    <a class="header-links" href="#education"> Education </a>
+                    <a class="header-links" href="#tech-stack">Tech stack</a>
+                </div>
+                <div
+                    class="mx-4 flex place-items-center gap-[20px] text-base max-md:w-full max-md:flex-col max-md:place-content-center"
+                >
+                    <a
+                        href="https://www.linkedin.com/in/phannd"
+                        aria-label="signup"
+                        class="flex h-[40px] place-items-center gap-2 rounded-full bg-black p-1 pl-4 text-white"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>Get in touch</span>
+                        <div
+                            class="flex h-[30px] w-[30px] place-content-center place-items-center rounded-full bg-white font-semibold text-black"
+                        >
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list absolute right-3 top-3 z-50 text-3xl text-black lg:hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="relative flex min-h-[100vh] w-full max-w-[100vw] flex-col overflow-hidden max-lg:p-4 max-md:mt-[50px]"
+            id="about"
+        >
+            <div
+                class="flex h-full min-h-[100vh] w-full place-content-center gap-6 p-[5%] max-xl:place-items-center max-lg:flex-col"
+            >
+                <div class="flex flex-col place-content-center">
+                    <div
+                        class="flex flex-wrap text-7xl font-semibold uppercase leading-[85px] max-lg:text-4xl max-md:leading-snug"
+                    >
+                        <span class="reveal-hero-text bg-green-200 p-1 px-6">
+                            Nguyen Duy Phan
+                        </span>
+                        <br />
+                        <span class="reveal-hero-text"> Backend Developer</span>
+                    </div>
+                    <div
+                        class="reveal-hero-text mt-2 max-w-[650px] p-2 text-justify max-lg:max-w-full"
+                    >
+                        I'm a Backend Developer with 1 year of experience, a
+                        curious technologist who is passionate about learning
+                        new things and writing clean, secure code. I can learn
+                        and adapt quickly. I wish to work in a challenging
+                        environment to improve and make the most of myself.
+                    </div>
+
+                    <div
+                        class="reveal-hero-text mt-4 flex place-items-center gap-4 overflow-hidden p-2"
+                    >
+                        <a
+                            href="https://www.linkedin.com/in/phannd"
+                            aria-label="signup"
+                            class="flex h-[40px] place-items-center gap-2 rounded-full border-[1px] border-solid border-black bg-white p-1 pl-4 text-black transition-colors duration-[0.5s] hover:bg-black hover:text-white"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>Get in touch</span>
+                            <div
+                                class="flex h-[30px] w-[30px] place-content-center place-items-center rounded-full bg-black font-semibold text-white"
+                            >
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex w-full max-w-[50%] place-content-center place-items-center overflow-hidden max-lg:max-w-[unset]"
+                >
+                    <div
+                        class="relative flex max-h-[680px] min-h-[550px] min-w-[350px] max-w-[650px] overflow-hidden max-lg:h-fit max-lg:max-h-[320px] max-lg:min-h-[180px] max-lg:w-[320px] max-lg:min-w-[320px]"
+                    >
+                        <img
+                            src="./assets/images/home/phan.png"
+                            alt="Phan's image"
+                            class="reveal-hero-img z-[1] h-full w-full object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="relative flex min-h-[100vh] w-full max-w-[100vw] flex-col place-items-center overflow-hidden p-6 py-5"
+            id="work"
+        >
+            <h3 class="reveal-up text-6xl font-medium max-lg:text-3xl">
+                Past works
+            </h3>
+            <div class="reveal-up my-4 h-[1px] w-[80%] bg-black"></div>
+            <div
+                class="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3"
+            >
+                <div
+                    class="reveal-up flex h-fit w-[450px] break-inside-avoid flex-col gap-2 rounded-lg bg-[#f3f3f3b4] p-4 shadow-lg max-lg:w-full max-lg:max-w-[400px]"
+                >
+                    <div class="flex place-items-center gap-3">
+                        <div
+                            class="h-[300px] w-full overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="./assets/images/home/logo-iconic-talents.png"
+                                class="h-full w-full object-contain"
+                                alt="design"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-medium">Iconic Talents</h3>
+                        <div class="text-gray-600">
+                            <ul class="list-inside list-disc">
+                                <li>
+                                    <strong>ERP System:</strong> Designed and
+                                    developed a full-featured ERP system from
+                                    scratch using
+                                    <strong
+                                        >NestJS, PostgreSQL, Prisma, Next.js,
+                                        TypeScript, and Docker</strong
+                                    >, supporting human resources, customer
+                                    management, finance, and other core business
+                                    operations.
+                                </li>
+                                <li>
+                                    <strong>Iconic Pro:</strong> Built a
+                                    CMS-driven landing page platform from
+                                    scratch using
+                                    <strong
+                                        >Next.js, PostgreSQL, Prisma,
+                                        TypeScript, Tailwind CSS, and
+                                        shadcn/ui</strong
+                                    >, enabling administrators to manage page
+                                    content, blog posts, and customer
+                                    registrations without code changes.
+                                </li>
+                                <li>
+                                    <strong>Infrastructure:</strong> Optimized
+                                    deployment infrastructure using
+                                    <strong
+                                        >Docker, Nginx, Linux, GitHub Actions,
+                                        and DigitalOcean</strong
+                                    >, improving application performance,
+                                    reliability, and operational cost
+                                    efficiency.
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="mt-4">
+                            <span>Learn more</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up flex h-fit w-[450px] break-inside-avoid flex-col gap-2 rounded-lg bg-[#f3f3f3b4] p-4 shadow-lg max-lg:w-full max-lg:max-w-[400px]"
+                >
+                    <div class="flex place-items-center gap-3">
+                        <div
+                            class="h-[300px] w-full overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="./assets/images/home/logo-nsv.webp"
+                                class="h-full w-full object-contain"
+                                alt="design"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-medium">
+                            NienSuViet - Vietnamese History
+                        </h3>
+                        <div class="text-gray-600">
+                            <p><strong>Back-end</strong>:</p>
+                            <ul class="list-inside list-disc">
+                                <li>
+                                    Built
+                                    <strong>6 microservices</strong>
+                                    communicating asynchronously through
+                                    RabbitMQ and gRPC.
+                                </li>
+                                <li>
+                                    Designed and implemented a subscription
+                                    service (Go, NestJS, PostgreSQL) supporting
+                                    multiple payment providers.
+                                </li>
+                                <li>
+                                    Implemented
+                                    <strong>idempotent payment</strong> APIs and
+                                    asynchronous webhook processing.
+                                </li>
+                                <li>
+                                    Built a transactional
+                                    <strong>outbox pattern</strong> with
+                                    RabbitMQ for reliable event-driven
+                                    communication.
+                                </li>
+                                <li>
+                                    Implemented retry mechanisms with
+                                    <strong>exponential backoff</strong> and
+                                    <strong>dead-letter exchanges</strong> (DLX)
+                                    for resilient message processing.
+                                </li>
+                                <li>
+                                    Integrated <strong>Redis caching</strong> to
+                                    reduce database load and improve response
+                                    latency.
+                                </li>
+                                <li>
+                                    Wrote
+                                    <strong
+                                        >50+ unit and integration tests</strong
+                                    >.
+                                </li>
+                            </ul>
+                            <p>
+                                <strong>Front-end</strong>: Developed the
+                                frontend using Next.js, TypeScript, Tailwind
+                                CSS, and shadcn/ui.
+                            </p>
+                        </div>
+                        <a href="#" class="mt-4">
+                            <span>Learn more</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up flex h-fit w-[450px] break-inside-avoid flex-col gap-2 rounded-lg bg-[#f3f3f3b4] p-4 shadow-lg max-lg:w-full max-lg:max-w-[400px]"
+                >
+                    <div class="flex place-items-center gap-3">
+                        <div
+                            class="h-[300px] w-full overflow-hidden rounded-lg"
+                        >
+                            <img
+                                src="./assets/images/home/project-reward-system.png"
+                                class="h-full w-full object-contain"
+                                alt="design"
+                            />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-xl font-medium">
+                            Blockchain-based Reward System (Scientific research)
+                        </h3>
+                        <div class="text-gray-600">
+                            <p><strong>Back-end</strong>:</p>
+                            <ul class="list-inside list-disc">
+                                <li>
+                                    Developed a RESTful API for an incentive and
+                                    rewards platform with Role-Based Access
+                                    Control (RBAC), JWT-based authentication
+                                    (access and refresh tokens), and API key
+                                    authorization.
+                                </li>
+                                <li>
+                                    Built the backend using Node.js and
+                                    Express.js, integrating with Ethereum smart
+                                    contracts through Ethers.js.
+                                </li>
+                            </ul>
+                            <p>
+                                <strong>Smart Contract</strong>: Developed three
+                                reward token smart contracts based on the
+                                ERC-777 standard, extending ERC-20 functionality
+                                with advanced token transfer features.
+                            </p>
+                        </div>
+                        <a href="#" class="mt-4">
+                            <span>Learn more</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="relative mt-10 flex min-h-[100vh] w-full max-w-[100vw] flex-col place-content-center place-items-center lg:p-6"
+            id="education"
+        >
+            <div
+                class="flex h-full w-full justify-around gap-8 rounded-xl bg-[#e7e6e685] p-4 max-lg:max-w-full max-lg:flex-col"
+            >
+                <div
+                    class="reveal-up flex h-full w-[50%] place-content-center max-lg:w-full lg:sticky lg:top-[20%]"
+                >
+                    <h3
+                        class="text-center text-6xl font-medium max-lg:text-3xl"
+                    >
+                        Education & Certifications
+                    </h3>
+                </div>
+
+                <div
+                    class="reveal-up flex w-[30%] flex-col place-items-center gap-4 p-2 max-lg:w-full"
+                >
+                    <!-- Education -->
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    University of
+                                    <br />
+                                    Information Technology - VNUHCM (UIT)
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    October 2021 - Present
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-justify text-gray-800">
+                            Bachelor of <b>Information Technology</b>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <!-- TOEIC -->
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    TOEIC Listening & Reading
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    December 2024 - December 2026
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-justify text-gray-800">
+                            <p class="text-lg">Score: <b>850</b>/990</p>
+
+                            <img
+                                src="./assets/images/home/toeic-lr.jpeg"
+                                alt="toeic"
+                                class="w-full rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    TOEIC Speaking & Writing
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    November 2024 - November 2026
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-justify text-gray-800">
+                            <p class="text-lg">Score: <b>250</b>/400</p>
+                            <img
+                                src="./assets/images/home/toeic-sw.jpeg"
+                                alt="toeic"
+                                class="w-full rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Udemy -->
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    [Udemy] NodeJS - Advanced Concepts
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    March 2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-justify text-gray-800">
+                            <img
+                                src="./assets/images/home/udemy-node-advanced-concepts.jpg"
+                                alt="toeic"
+                                class="w-full rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- F8 -->
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    [F8] NodeJS & ExpressJS
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    July 2022
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-justify text-gray-800">
+                            <img
+                                src="./assets/images/home/f8-node.png"
+                                alt="toeic"
+                                class="w-full rounded-lg"
+                            />
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex h-fit w-full flex-col gap-4 border-2 border-black bg-white p-4"
+                    >
+                        <div class="flex w-full place-items-center gap-4 p-2">
+                            <div>
+                                <p class="text-xl font-semibold">
+                                    [F8] Ubuntu with WSL
+                                </p>
+                                <p class="text-md text-gray-600 mt-2">
+                                    February 2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-justify text-gray-800">
+                            <img
+                                src="./assets/images/home/f8-ubuntu.png"
+                                alt="toeic"
+                                class="w-full rounded-lg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="relative flex min-h-[80vh] w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6"
+            id="tech-stack"
+        >
+            <div class="mt-8 flex flex-col place-items-center gap-5">
+                <div class="reveal-up mt-5 flex flex-col gap-3 text-center">
+                    <h2 class="text-4xl font-semibold">My Tech Stack</h2>
+                </div>
+                <div
+                    class="mt-6 flex max-w-[60%] flex-wrap place-content-center gap-2 max-lg:flex-col"
+                >
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i class="devicon-go-plain colored text-2xl"></i>
+
+                            <h3 class="text-2xl font-semibold">Golang</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Proficient in Go for building high-performance
+                            backend services.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-nestjs-original colored text-2xl"
+                            ></i>
+
+                            <h3 class="text-2xl font-semibold">
+                                Nest.js (ExpressJS)
+                            </h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Experienced with Nest.js framework for robust and
+                            scalable applications, leveraging ExpressJS.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-postgresql-plain colored text-2xl"
+                            ></i>
+
+                            <h3 class="text-2xl font-semibold">PostgreSQL</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Skilled in designing and managing relational
+                            databases with PostgreSQL.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-mongodb-plain colored text-2xl"
+                            ></i>
+
+                            <h3 class="text-2xl font-semibold">MongoDB</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Adept at working with NoSQL databases, specifically
+                            MongoDB.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-rabbitmq-original colored text-2xl"
+                            ></i>
+
+                            <h3 class="text-2xl font-semibold">RabbitMQ</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Experience in implementing message queues for
+                            inter-service communication.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i class="devicon-redis-plain colored text-2xl"></i>
+                            <h3 class="text-2xl font-semibold">Redis</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Utilizing Redis for caching and real-time data
+                            processing.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-typescript-plain colored text-2xl"
+                            ></i>
+                            <h3 class="text-2xl font-semibold">TypeScript</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Developing robust and type-safe applications with
+                            TypeScript.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i class="devicon-grpc-plain colored text-2xl"></i>
+                            <h3 class="text-2xl font-semibold">gRPC</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Implementing high-performance RPC frameworks with
+                            gRPC.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i
+                                class="devicon-docker-plain colored text-2xl"
+                            ></i>
+                            <h3 class="text-2xl font-semibold">Docker</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Containerizing applications for efficient deployment
+                            and scalability.
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up flex h-[150px] w-[350px] flex-col gap-2 p-4"
+                    >
+                        <div class="flex gap-2">
+                            <i class="devicon-git-plain colored text-2xl"></i>
+                            <h3 class="text-2xl font-semibold">Git</h3>
+                        </div>
+                        <div class="text-[#595959]">
+                            Version control and collaborative development using
+                            Git.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    id="github-card"
+                    data-user="phannd353"
+                    data-height="150px"
+                    data-width="350px"
+                    class="reveal-up"
+                ></div>
+                <script
+                    type="module"
+                    src="https://cdn.jsdelivr.net/gh/PhanhotboY/profile-card@latest/jsdelivr/widget.js"
+                ></script>
+
+                <a
+                    href="https://www.linkedin.com/in/phannd"
+                    aria-label="signup"
+                    class="reveal-up flex h-[40px] place-items-center gap-2 rounded-full bg-black p-1 pl-4 text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>Get in touch</span>
+                    <div
+                        class="flex h-[30px] w-[30px] place-content-center place-items-center rounded-full bg-white font-semibold text-black"
+                    >
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <hr class="mt-4" />
+
+        <footer
+            class="mt-auto flex min-h-[100px] w-full place-content-around place-items-center gap-3 p-[2%] px-[10%] text-black max-md:flex-col"
+        >
+            <div class="flex gap-6 text-2xl">
+                <a
+                    href="https://github.com/phannd353"
+                    aria-label="Github"
+                    class="w-6 h-6 aspect-square"
+                >
+                    <i class="bi bi-github"></i>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/phannd"
+                    aria-label="Linkedin"
+                    class="w-6 h-6 aspect-square"
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a
+                    href="https://zalo.me/0344800574"
+                    aria-label="Zalo"
+                    class="w-6 h-6 aspect-square"
+                >
+                    <img
+                        src="./assets/images/home/logo-zalo.svg"
+                        alt="zalo"
+                        class="h-full w-full object-contain object-center"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
